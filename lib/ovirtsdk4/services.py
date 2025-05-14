@@ -24885,7 +24885,7 @@ class StepsService(Service):
         For example, to add a step to `job` with identifier `123` send the
         following request:
         
-        ```
+        ```http
         POST /ovirt-engine/api/jobs/123/steps
         ```
         With the following request body:
