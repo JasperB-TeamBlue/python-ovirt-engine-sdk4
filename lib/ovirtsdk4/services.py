@@ -41655,7 +41655,7 @@ class AttachedStorageDomainDiskService(MeasurableService):
         **kwargs
     ):
         """
-        Sparsify the disk.
+        Sparsify the disk. TEST STRING.
         IMPORTANT: Since version 4.2 of the engine this operation is deprecated, and preserved only for backwards
         compatibility. It will be removed in the future. To remove a disk use the old link -> `DiskService.remove`, new test -> [remove](/services/disks/methods/remove)
         operation of the service that manages that disk.
