@@ -28381,7 +28381,7 @@ class TemplateService(Service):
 
         :param filename: The name of the OVA file.
         This is an optional parameter. If it is not specified, the name of the OVA file is determined according
-        to the name of the template. It will conform to the following pattern: "<template name>.ova".
+        to the name of the template. It will conform to the following pattern: "template name.ova".
 
         :param exclusive: Indicates if the existing templates with the same name should be overwritten.
         The export action reports a failed action if a template of the same name exists in the destination domain.
