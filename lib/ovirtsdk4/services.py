@@ -89,11 +89,26 @@ class AffinityGroupService(Service):
     ):
         """
         Remove the affinity group.
+        ```
+        DELETE /ovirt-engine/api/clusters/000-000/affinitygroups/123-456
+        ```
+        Whitespace before:
+
         ```http
         DELETE /ovirt-engine/api/clusters/000-000/affinitygroups/123-456
         ```
+        
+        No prefix:
 
+        ```
+        DELETE /ovirt-engine/api/clusters/000-000/affinitygroups/123-456
+        ```
 
+        Text prefix:
+
+        ```text
+        DELETE /ovirt-engine/api/clusters/000-000/affinitygroups/123-456
+        ```
 
         :param async_: Indicates if the removal should be performed asynchronously.
 
@@ -28381,7 +28396,7 @@ class TemplateService(Service):
 
         :param filename: The name of the OVA file.
         This is an optional parameter. If it is not specified, the name of the OVA file is determined according
-        to the name of the template. It will conform to the following pattern: "template name.ova".
+        to the name of the template. It will conform to the following pattern: "template_name.ova".
 
         :param exclusive: Indicates if the existing templates with the same name should be overwritten.
         The export action reports a failed action if a template of the same name exists in the destination domain.
@@ -32828,7 +32843,7 @@ class VmService(MeasurableService):
 
         :param filename: The name of the OVA file.
         This is an optional parameter, if it is not specified then the name of OVA file is determined according
-        to the name of the virtual machine. It will conform the following pattern: "<virtual machine name>.ova".
+        to the name of the virtual machine. It will conform the following pattern: "virtual_machine_name.ova".
 
         :param discard_snapshots: Use the `discard_snapshots` parameter when the virtual machine should be exported with all of its
         snapshots collapsed.
