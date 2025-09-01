@@ -95,7 +95,7 @@ class AffinityGroupService(Service):
         Whitespace before:
 
         ```http
-        DELETE /ovirt-engine/api/clusters/000-000/affinitygroups/123-456
+        DELETE /ovirt-engine/api/clusters/000-000/affinitygroups/123-456 HTTP/1.1
         ```
 
         https prefix:
@@ -104,7 +104,13 @@ class AffinityGroupService(Service):
         DELETE /ovirt-engine/api/clusters/000-000/affinitygroups/123-456
         ```
 
-        js prefix
+        html prefix:
+
+        ```html
+        DELETE /ovirt-engine/api/clusters/000-000/affinitygroups/123
+        ```
+
+        js prefix:
 
         ```js
         console.log("Hello world");
