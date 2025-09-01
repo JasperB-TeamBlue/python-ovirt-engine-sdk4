@@ -97,6 +97,24 @@ class AffinityGroupService(Service):
         ```http
         DELETE /ovirt-engine/api/clusters/000-000/affinitygroups/123-456
         ```
+
+        https prefix:
+
+        ```https
+        DELETE /ovirt-engine/api/clusters/000-000/affinitygroups/123-456
+        ```
+
+        js prefix
+
+        ```js
+        console.log("Hello world");
+        ```
+
+        html prefix:
+
+        ```html
+        DELETE /ovirt-engine/api/clusters/000-000/affinitygroups/123-456
+        ```
         
         No prefix:
 
@@ -109,6 +127,8 @@ class AffinityGroupService(Service):
         ```text
         DELETE /ovirt-engine/api/clusters/000-000/affinitygroups/123-456
         ```
+
+        just http in the wild.
 
         :param async_: Indicates if the removal should be performed asynchronously.
 
