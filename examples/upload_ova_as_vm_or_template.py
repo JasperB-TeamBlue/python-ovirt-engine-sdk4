@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+
 #
-# Copyright (c) 2020 Red Hat, Inc.
+# The oVirt Project - oVirt Engine SDK for Python
+#
+# Copyright oVirt Authors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -90,7 +93,7 @@ def get_disk_info(args, image_info, disk_name, disk_sparse):
         disk_info["format"] = types.DiskFormat.COW
     else:
         print("Invalid or unsupported disk format %s found in the ovf file..." % disk_format)
-        raise
+        raise Exception
 
     # Create disk name from image name and disk format.
     basename = os.path.splitext(os.path.basename(disk_name))[0]
