@@ -1075,6 +1075,10 @@ class AffinityGroupsService(Service):
         :param follow: Indicates which inner links should be _followed_. The objects referenced by these links will be fetched as part
         of the current request. See [here](https://ovirt.github.io/ovirt-engine-api-model/master/#documents/003_common_concepts/follow) for details.
 
+        Test 4:
+
+        :param follow: Different *follow*, __follow__, _follow_, **follow**
+
         :param headers: Additional HTTP headers.
 
         :param query: Additional URL query parameters.
