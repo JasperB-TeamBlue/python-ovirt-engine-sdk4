@@ -1052,11 +1052,23 @@ class AffinityGroupsService(Service):
         The order of the affinity groups results isn't guaranteed.
 
 
-
+        FOLLOW PARAM TEST
         :param max: Sets the maximum number of affinity groups to return. If not specified all the affinity groups are returned.
+
+        Non functional:
 
         :param follow: Indicates which inner links should be _followed_. The objects referenced by these links will be fetched as part
         of the current request. See <<documents/003_common_concepts/follow, here>> for details.
+
+        Test 1:
+
+        :param follow: Indicates which inner links should be _followed_. The objects referenced by these links will be fetched as part
+        of the current request. See https://ovirt.github.io/ovirt-engine-api-model/master/#documents/003_common_concepts/follow[here] for details.
+
+        Test 2:
+
+        :param follow: Indicates which inner links should be _followed_. The objects referenced by these links will be fetched as part
+        of the current request. See <https://ovirt.github.io/ovirt-engine-api-model/master/#documents/003_common_concepts/follow, here> for details.
 
         :param headers: Additional HTTP headers.
 
